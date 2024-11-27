@@ -72,7 +72,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   max-width: 500px; /* Limita a largura máxima do formulário */
   margin: 50px auto; /* Centraliza a div com margem superior */
   padding: 20px;
-  background-color: #fff7e6; /* Cor de fundo suave dourada */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -208,50 +207,8 @@ src="https://www.facebook.com/tr?id=1317383429045009&ev=PageView&noscript=1"
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-18412828" data-id="18412828" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-        <div class="form-container">
-          <h1>FORMULÁRIO DE CADASTRO</h1>
-          <form id="meuFormulario" method="POST">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
-        
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-        
-            <label for="telefone">Telefone:</label><br>
-            <input type="text" id="telefone" name="telefone" required><br><br>
-        
-            <label for="cep">CEP:</label><br>
-            <input type="text" id="cep" name="cep" required><br><br>
-        
-            <button type="submit">Enviar</button>
-          </form>
-        </div>        
-        <script>
-          document.getElementById("meuFormulario").addEventListener("submit", function(e) {
-            e.preventDefault(); // Impede o envio tradicional do formulário
-        
-            const form = e.target;
-            const formData = new FormData(form);
-        
-            // URL do seu Google Apps Script (novo link gerado)
-            const scriptURL = "https://script.google.com/macros/s/AKfycbxgyBzbS1aNF00pa7in5QLrhKr-oMrpMzIA3bJH9mr7y1HcGbCs_I87rbd4zI5GrHdnrA/exec";  // Substitua pelo seu script URL
-        
-            fetch(scriptURL, {
-              method: "POST",
-              body: formData,
-            })
-            .then(response => response.text())
-            .then(data => {
-              alert("Formulário enviado com sucesso!");
-              form.reset(); // Limpa o formulário
-            })
-            .catch(error => {
-              console.error("Erro ao enviar o formulário:", error);
-              alert("Houve um problema ao enviar o formulário.");
-            });
-          });
-        </script>
-					</div>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtrV-B05n_nAEKmMIXZAlVrTMcyD68D6LrkP2I0eryOGNN4A/viewform?embedded=true" width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>	
+			</div>
 		</div>
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-34b62cee" data-id="34b62cee" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
