@@ -215,13 +215,35 @@ direto na sua tv box, tv smart, celular ou computador</span>
 				</div>
 				<div class="elementor-element elementor-element-494dfeca elementor-widget elementor-widget-video" data-id="494dfeca" data-element_type="widget" data-settings="{&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/goldcard-kvn.site\/wp-content\/uploads\/2024\/10\/WhatsApp-Image-2023-01-27-at-18.56.51.jpeg&quot;,&quot;id&quot;:&quot;12&quot;,&quot;size&quot;:&quot;&quot;},&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;vimeo&quot;}" data-widget_type="video.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-wrapper elementor-open-inline">
-			<iframe class="elementor-video-iframe" allowfullscreen allow="clipboard-write" title="Reprodutor de vídeo vimeo" src="https://player.vimeo.com/video/846737653?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=1#t="></iframe>				<div class="elementor-custom-embed-image-overlay" style="background-image: url(https://goldcard-kvn.site/wp-content/uploads/2024/10/WhatsApp-Image-2023-01-27-at-18.56.51.jpeg);">
-																<div class="elementor-custom-embed-play" role="button" aria-label="Reproduzir vídeo" tabindex="0">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-play" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z"></path></svg>							<span class="elementor-screen-only">Reproduzir vídeo</span>
-						</div>
-									</div>
+					<div style="text-align: center; margin: 20px;">
+						<video id="meu-video" src="video/video.mp4" autoplay muted loop width="1080" height="360" 
+							style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+						</video>
+						<br>
+						<button id="btn-audio" style="margin-top: 10px; padding: 10px 20px; font-size: 16px; 
+							background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+							Ativar Áudio
+						</button>
 					</div>
+					
+					<script>
+						// Obtém o elemento de vídeo e o botão
+						const video = document.getElementById('meu-video');
+						const botaoAudio = document.getElementById('btn-audio');
+					
+						// Função para ativar/desativar o áudio
+						botaoAudio.addEventListener('click', function() {
+							if (video.muted) {
+								video.muted = false;  // Desmuta o vídeo
+								botaoAudio.textContent = 'Desativar Áudio';  // Altera o texto do botão
+								botaoAudio.style.backgroundColor = '#FF5722';  // Altera a cor do botão
+							} else {
+								video.muted = true;  // Muta o vídeo
+								botaoAudio.textContent = 'Ativar Áudio';  // Restaura o texto original
+								botaoAudio.style.backgroundColor = '#4CAF50';  // Restaura a cor original
+							}
+						});
+					</script>					
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-2ab393f4 elementor-mobile-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="2ab393f4" data-element_type="widget" data-widget_type="button.default">
